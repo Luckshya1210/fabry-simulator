@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.HelloFX">
+   <center>
+      <SplitPane dividerPositions="0.48621553884711777" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.rowIndex="2">
+                     <children>
+                        <CheckBox fx:id="R_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="R" />
+                        <TextField fx:id="R_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="R_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="R_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <CheckBox fx:id="F_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="F" />
+                        <TextField fx:id="F_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="F_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="F_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0">
+                     <children>
+                        <CheckBox fx:id="distance_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="d" />
+                        <TextField fx:id="distance_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="distance_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="distance_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="1">
+                     <children>
+                        <CheckBox fx:id="n_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="n" />
+                        <TextField fx:id="n_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="n_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="n_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="2">
+                     <children>
+                        <CheckBox fx:id="theta_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="theta" />
+                        <TextField fx:id="theta_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="theta_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="theta_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <CheckBox fx:id="T_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="T" />
+                        <TextField fx:id="T_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="T_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="T_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.rowIndex="3">
+                     <children>
+                        <CheckBox fx:id="wavelength_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Lambda" />
+                        <TextField fx:id="wavelength_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="wavelength_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="wavelength_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <CheckBox fx:id="delta_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="delta" />
+                        <TextField fx:id="delta_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="delta_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="delta_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <CheckBox fx:id="del_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="del" />
+                        <TextField fx:id="del_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="del_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="del_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="I_transmitted_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="I_t" />
+                        <TextField fx:id="I_transmitted_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="I_transmitted_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="I_transmitted_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="I_incident_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="I_o" />
+                        <TextField fx:id="I_incident_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="I_incident_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="I_incident_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="96.0" prefWidth="304.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="B_checkBox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="beta" />
+                        <TextField fx:id="B_textField" alignment="TOP_CENTER" layoutX="151.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.rightAnchor="131.0" />
+                        <ChoiceBox fx:id="B_choiceBox" layoutX="236.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="4.0" />
+                        <Slider fx:id="B_slider" layoutX="12.0" layoutY="44.0" prefHeight="14.0" prefWidth="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0">
+              <tabs>
+                <Tab text="Untitled Tab 1">
+                     <content>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <AnchorPane prefHeight="41.0" prefWidth="998.0">
+                                 <children>
+                                    <ChoiceBox layoutX="196.0" layoutY="8.0" prefWidth="150.0" AnchorPane.leftAnchor="238.0" />
+                                    <Label alignment="CENTER" layoutX="582.0" layoutY="12.0" text="VS" AnchorPane.leftAnchor="582.0" AnchorPane.rightAnchor="582.0" />
+                                    <ChoiceBox layoutX="790.0" layoutY="8.0" prefWidth="150.0" AnchorPane.rightAnchor="238.0" />
+                                    <Label layoutX="392.0" layoutY="12.0" text="X-AXIS" AnchorPane.leftAnchor="418.0" />
+                                    <Label layoutX="724.0" layoutY="12.0" text="Y-AXIS" AnchorPane.rightAnchor="418.0" />
+                                    <Spinner layoutX="137.0" layoutY="8.0" prefHeight="25.0" prefWidth="59.0" AnchorPane.leftAnchor="144.0" />
+                                    <Spinner layoutX="975.0" layoutY="8.0" prefHeight="25.0" prefWidth="59.0" AnchorPane.rightAnchor="144.0" />
+                                 </children>
+                              </AnchorPane>
+                              <LineChart alternativeRowFillVisible="false" prefHeight="428.0" prefWidth="1178.0" VBox.vgrow="ALWAYS">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                              <Label maxHeight="20.0" text="Label" />
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+                <Tab fx:id="plusTab" text="+">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+        </items>
+      </SplitPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

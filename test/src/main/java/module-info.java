@@ -3,6 +3,6 @@ module test.test {
     requires javafx.fxml;
             
                         
-    opens test to javafx.fxml;
-    exports test;
+    opens fabry to javafx.fxml;
+    exports fabry;
 }

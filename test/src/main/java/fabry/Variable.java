@@ -12,7 +12,7 @@ import fabry.Exceptions.MathError;
 
 public class Variable {
 
-    public HelloFX parent;
+    public Main parent;
 
 
     public CheckBox checkBox;
@@ -214,7 +214,7 @@ public class Variable {
     }
 
 
-    Variable(String _description, CheckBox _checkBox, Slider _slider, TextField _textField, ChoiceBox<String> _choiceBox, HelloFX parent){
+    Variable(String _description, CheckBox _checkBox, Slider _slider, TextField _textField, ChoiceBox<String> _choiceBox, Main parent){
         this.description = _description;
         this.checkBox=_checkBox;
         this.slider=_slider;

@@ -17,7 +17,7 @@ import java.util.*;
 import static java.lang.Math.*;
 
 
-public class HelloFX extends Application {
+public class Main extends Application {
 
 
     @FXML public CheckBox distance_checkBox;
